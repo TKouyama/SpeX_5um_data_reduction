@@ -12,8 +12,7 @@
 ;;
 pro IRTF_SpeX_5um_processing
   ;;
-  ;src_directory = 'C:/work/SpeX_src_directory/' ;; <= Modify this path to your copy directory
-  src_directory = 'C:\work\tasks\Collabrations\Jessup\SpeX_program/' ;; <= Modify this path to your copy directory
+  src_directory = 'C:/work/SpeX_src_directory/' ;; <= Modify this path to your copy directory
   cd,src_directory
 
   ;; use three IDL windows
