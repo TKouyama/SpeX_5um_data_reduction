@@ -1,0 +1,50 @@
+#############
+# IRTF/SpeX #
+#############
+
+##
+## Observer location Latitude, Longitude, Altitude
+##
+Observer_latitude=19.8262183167
+Observer_longitude=-155.471998789
+Observer_altitude=4.139
+
+##
+## Telescope Configurations
+##
+Resolution=0.11554110
+Pixel_width=512
+Pixel_height=512
+
+##
+## North Pole direction of target
+##
+North_up = Y
+#North_up = N
+
+##
+## North direction for observer on earth
+## If North_up eq Y, then this parameter will be ignored.
+## Fix: +Y direction = J2000 North (Telescope case)
+## Free: +Y direction = Upward seen from observer (Balloon case)
+##
+North_direction_mode=Fix
+#North_direction_mode=Free
+
+##
+## Image rotation angle which user can change to adjust, for example, telescope rotation.
+## If North_up eq Y, then this parameter will be ignored.
+##
+Image_rotation_angle=0
+
+##
+## SPICE generic_kernel location
+##
+#Kernel_dir={your path for SPICE genric_kernels}\generic_kernels
+Kernel_dir=C:\work\ENVI_IDL\spice\kernels\generic_kernels
+Kernel_list=sunpos.tm
+
+##
+## Topography data
+##
+Topo_data_file_name=C:\work\DATA\VenusData\Magellan\Venus_Magellan_Topography_Global_4641m_gapfilled_v02.tif
