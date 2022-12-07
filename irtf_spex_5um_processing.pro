@@ -502,7 +502,7 @@ pro exec_IRTF_SpeX_5um_processing,obs_date $
 
   stop
   ;; if you want to add geometry information, comment-out below line.
-  ;return
+  return
 
   ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
   ;; 5. Adding geometry infromation (not completed) ;;
