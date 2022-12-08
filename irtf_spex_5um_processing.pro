@@ -77,7 +77,8 @@ pro IRTF_SpeX_5um_processing
   ;; Directory path for 5.1 um images
   ;;  Folder for each obsearvation day is expected to locate under {ifldname_data},
   ;;  and simple name indicating observatoin date, such as, "20220220"
-  ifldname_data = 'C:/work/DATA/VenusData/GroundBased/SpeX/' ;; please replace your data path
+
+  ifldname_data = './data/' ;; <= Replace your data direcotry path
   ifldname = ifldname_data + obs_date[test_n]+'/'
 
   ;; Output directory
@@ -502,7 +503,7 @@ pro exec_IRTF_SpeX_5um_processing,obs_date $
 
   stop
   ;; if you want to add geometry information, comment-out below line.
-  return
+  ;return
 
   ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
   ;; 5. Adding geometry infromation (not completed) ;;
