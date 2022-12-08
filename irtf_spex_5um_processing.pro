@@ -1,10 +1,10 @@
 ;;
 ;; IDL code for data reduction for 5um Venus images obtained by IRTF/SpeX
 ;;
-;; 1. Generating Sky image, which is used for background subtraction
-;; 2. Generating Sky flat by averaging sky frames with reducing line noises
+;; 1. Generating Sky image by averaging sky frames, which is used for background subtraction
+;; 2. Generating Sky flat from the Sky image with reducing line noises
 ;; 3. Preparing a reference Venus image for template matching
-;; 4. Performing shift and add procedure with the reference image
+;; 4. Stacking Venus images by shift-and-add procedure based on template matching
 ;; (option) 5. adding geometry information
 
 ;;
