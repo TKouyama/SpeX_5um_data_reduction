@@ -231,7 +231,7 @@ pro exec_IRTF_SpeX_5um_processing,obs_date $
   ;; flat correction ;;
   template_im = template_im / sky_flat * valid_pos_im
 
-  ;; Filling surrounding mean value to each dead pixel
+  ;; Replacing dead pixel value to mean value of surrounding pixels
   s_template_im = g_smooth(template_im,5, ignore_Value=0)
   template_im[where(valid_pos_im eq 0)] = s_template_im[where(valid_pos_im eq 0)]
 
@@ -290,7 +290,7 @@ pro exec_IRTF_SpeX_5um_processing,obs_date $
   ;; Extracting only valid Venus disk region ;;
   template_im_orig = template_im_center
   
-  ;; cripping only venus disk region
+  ;; clipping only venus disk region
   template_im_center = template_im_orig[50:511-50, 50 : ny-1-50] > 0
   offset_x = 50
   offset_y = 50
